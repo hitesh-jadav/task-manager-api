@@ -17,7 +17,7 @@ A secure, scalable Task Management RESTful API built with **Node.js**, **Express
 ---
 
 ## 📁 Folder Structure
-``
+```
 task-manager-api/
 ├── src/
 │ ├── controllers/ # Request handlers
