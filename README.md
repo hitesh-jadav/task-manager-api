@@ -31,7 +31,7 @@ task-manager-api/
 ├── .env # Environment variables
 ├── package.json
 ├── tsconfig.json
-
+```
 ---
 
 ## ⚙️ Setup & Installation
