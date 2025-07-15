@@ -87,19 +87,17 @@ Dummy Credentials
   "password": "admin123"
 }
 
-### 📘 API Endpoints
+### 📌 API Endpoints
 
-## 🔐 Auth
-```
-Method	    Endpoint	        Description
+| Method | Endpoint       | Description |
+|--------|----------------|-------------|
+| POST   | `/auth/login`  | Login and receive a JWT token |
+| GET    | `/tasks`       | Get all tasks (excluding soft-deleted ones) with pagination |
+| GET    | `/tasks/:id`   | Fetch a specific task by ID |
+| POST   | `/tasks`       | Create a new task with title, description, and status |
+| PATCH  | `/tasks/:id`   | Update a task (auto-sets `completed_at` when status = completed) |
+| DELETE | `/tasks/:id`   | Soft delete a task (sets status = deleted) |
 
-POST       /auth/login     	Login and receive a JWT token
-GET	       /tasks	         Get all tasks (excluding soft-deleted ones) with pagination
-GET        /tasks/:id	      Fetch a specific task by ID
-POST	     /tasks          Create a new task with title, description, and status
-PATCH	     /tasks/:id      	Update a task (auto-sets completed_at when status = completed)
-DELETE	   /tasks/:id	      Soft delete a task (sets status = deleted)
-```
 ### 📥 Sample Task Payload
 
 {
